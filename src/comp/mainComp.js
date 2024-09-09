@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./mainComp.css";
 
 const MainComp = ({pageName}) => {
   return (

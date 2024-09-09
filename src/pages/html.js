@@ -1,15 +1,14 @@
 import Header from "../comp/header";
-
+import Footer from "../comp/footer";
+import Main from "../comp/mainComp";
 const Html = () => {
   return (
     <>
       <Header />
 
-      <main>HTML PAGE</main>
-      <footer>
-        Designed and developed by Yahya Dafer
-        <span>🧡</span>
-      </footer>
+      <Main pageName="HTML PAGE" />
+
+      <Footer />
     </>
   );
 };

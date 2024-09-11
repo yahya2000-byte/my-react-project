@@ -2,21 +2,20 @@ import Header from "../comp/header";
 import Footer from "../comp/footer";
 import Main from "../comp/mainComp";
 import { Helmet } from "react-helmet-async";
-
-const Javascript = () => {
+const About = () => {
   return (
     <>
       <Helmet>
-        <title>More page</title>
-        <meta name="description" content="moooore aboute me" />
+        <title>About page</title>
+        <meta name="description" content="about meeee" />
       </Helmet>
       <Header />
 
-      <Main pageName="MORE Page" />
+      <Main pageName="ABOUT PAGE" />
 
       <Footer />
     </>
   );
 };
 
-export default Javascript;
+export default About;

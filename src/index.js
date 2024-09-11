@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
+import { HelmetProvider } from "react-helmet-async";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import Home from "./pages/home";
-import HTML from "./pages/html";
-import CSS from "./pages/css";
-import JAVASCRIPT from "./pages/javascript";
+import About from "./pages/about";
+import Skills from "./pages/skills";
+import More from "./pages/more";
 
 const router = createBrowserRouter([
   {
@@ -17,18 +18,18 @@ const router = createBrowserRouter([
     errorElement: <h1> Opss Sorry!</h1>,
   },
   {
-    path: "/html",
-    element: <HTML />,
+    path: "/about",
+    element: <About />,
     errorElement: <h1> Opss Sorry !</h1>,
   },
   {
-    path: "/css",
-    element: <CSS />,
+    path: "/skills",
+    element: <Skills />,
     errorElement: <h1> Opss Sorry !</h1>,
   },
   {
-    path: "/javascript",
-    element: <JAVASCRIPT />,
+    path: "/more",
+    element: <More />,
     errorElement: <h1> Opss Sorry !</h1>,
   },
 ]);
@@ -42,3 +43,5 @@ root.render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();

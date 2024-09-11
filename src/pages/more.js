@@ -2,20 +2,21 @@ import Header from "../comp/header";
 import Footer from "../comp/footer";
 import Main from "../comp/mainComp";
 import { Helmet } from "react-helmet-async";
-const Html = () => {
+
+const More = () => {
   return (
     <>
       <Helmet>
-        <title>About page</title>
-        <meta name="description" content="about meeee" />
+        <title>More page</title>
+        <meta name="description" content="moooore aboute me" />
       </Helmet>
       <Header />
 
-      <Main pageName="ABOUT PAGE" />
+      <Main pageName="MORE Page" />
 
       <Footer />
     </>
   );
 };
 
-export default Html;
+export default More;

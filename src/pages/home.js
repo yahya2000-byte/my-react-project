@@ -7,9 +7,9 @@ const Home = () => {
     <>
       <Helmet>
         <title>Home page</title>
-        <meta name="description" content="its css" />
+        <meta name="description" content="its the home page" />
         <style type="text/css">{`
-        /*chtoto*/
+        
     `}</style>
       </Helmet>
 

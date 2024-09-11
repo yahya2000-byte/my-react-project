@@ -14,7 +14,7 @@ const Header = () => {
         </h1>
         <ul className="flex">
           <li className="main-list">
-            <NavLink className="main-link" to="/html">
+            <NavLink className="main-link" to="/about">
               About me
             </NavLink>
             <ul className="sub-ul">
@@ -30,7 +30,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <NavLink className="main-link" to="/css">
+            <NavLink className="main-link" to="/skills">
               Skills
             </NavLink>
             <ul className="sub-ul">
@@ -57,7 +57,7 @@ const Header = () => {
             </ul>
           </li>
           <li className="main-list">
-            <NavLink className="main-link" to="/javascript">
+            <NavLink className="main-link" to="/more">
               More
             </NavLink>
             <ul className="sub-ul sub-of-js">
@@ -69,9 +69,9 @@ const Header = () => {
         </ul>
       </header>
 
-      <header style={{backgroundColor:"teal"}} className="show-when-mobile">
+      <header style={{ backgroundColor: "teal" }} className="show-when-mobile">
         <h1>
-          Yahya Dafer <span>🧡</span>{" "}
+          Yahya Dafer <span>🧡</span>
         </h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
@@ -85,13 +85,13 @@ const Header = () => {
             <input id="html" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <NavLink to="/about">Full Course</NavLink>
               </li>
               <li>
-                <a href="">Crash Course</a>
+                <NavLink to="/skills">Crash Course</NavLink>
               </li>
               <li>
-                <a href="">learn in 1h</a>
+                <NavLink to="/more">learn in 1h</NavLink>
               </li>
             </ul>
           </div>

@@ -2,7 +2,7 @@ import Header from "../comp/header";
 import Footer from "../comp/footer";
 import Main from "../comp/mainComp";
 import { Helmet } from 'react-helmet-async';
-const Css = () => {
+const skills = () => {
   return (
     <>
     <Helmet>
@@ -19,4 +19,4 @@ const Css = () => {
   );
 };
 
-export default Css;
+export default skills;

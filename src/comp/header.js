@@ -5,8 +5,8 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
-      <header className="hide-when-mobile">
+    <div className="myheader">
+      <header className="hide-when-mobile ali">
         <h1>
           <Link to="/">
             Yahya Dafer <span>🧡</span>
@@ -69,7 +69,7 @@ const Header = () => {
         </ul>
       </header>
 
-      <header style={{ backgroundColor: "red" }} className="show-when-mobile">
+      <header style={{backgroundColor:"teal"}} className="show-when-mobile">
         <h1>
           Yahya Dafer <span>🧡</span>{" "}
         </h1>
